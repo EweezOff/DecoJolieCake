@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Satisfy:wght@400;600;700");
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -7,11 +8,12 @@
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
-  --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
+  --hue-color: 340;
+  --first-color: hsl(var(--hue-color), 89%, 90%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
+  --second-body-font: 'Satisfy', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -30,7 +32,7 @@
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
-    --normal-font-size: 1rem;
+    --normal-font-size: 1.25rem;
     --smaller-font-size: .875rem;
   }
 }
@@ -46,7 +48,7 @@ html {
 
 body {
   margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
+  font-family: var(--second-body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
 }
@@ -212,6 +214,12 @@ img {
   flex-direction: column;
 }
 
+.home__social-second {
+  display: block;
+  text-align: center;
+  margin: 30px;
+}
+
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
@@ -320,19 +328,19 @@ img {
 }
 
 .skills__html {
-  width: 80%;
+  width: 100%;
 }
 
 .skills__css {
-  width: 60%;
+  width: 100%;
 }
 
 .skills__js {
-  width: 30%;
+  width: 95%;
 }
 
 .skills__ux {
-  width: 10%;
+  width: 85%;
 }
 
 .skills__img {
@@ -422,7 +430,7 @@ img {
     padding: 4rem 0 2rem;
   }
   .home__social {
-    padding-top: 0;
+    padding-top: 0rem;
     padding-bottom: 2.5rem;
     flex-direction: row;
     align-self: flex-end;
